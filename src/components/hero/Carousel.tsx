@@ -8,17 +8,17 @@ const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const slides = [
     {
-      src: "/assets/images/hero/make-believe.jpeg",
+      src: "/assets/images/hero/make-believe.webp",
       alt: "Hero image",
       buttonText: "Shop Now",
     },
     {
-      src: "/assets/images/hero/picture-perfect-deals.jpeg",
+      src: "/assets/images/hero/picture-perfect-deals.webp",
       alt: "Hero image",
       buttonText: "Do It Now",
     },
     {
-      src: "/assets/images/hero/new-arrivals.jpeg",
+      src: "/assets/images/hero/new-arrivals.webp",
       alt: "Hero image",
       buttonText: "Hit It Now",
     },

@@ -26,7 +26,7 @@ export const specialProduct: SpecialProduct = {
   priceTwo: 3000,
   rating: 4.8,
   saleDuration: "17h 31m",
-  image: "/assets/images/products/lens.jpeg",
+  image: "/assets/images/products/lens.webp",
 };
 
 export const products: Product[] = [
@@ -43,7 +43,7 @@ export const products: Product[] = [
       "DIGIC X Image Processor",
       "8K30 Raw Video",
     ],
-    image: "/assets/images/products/dslr.png",
+    image: "/assets/images/products/dslr.webp",
   },
   {
     name: "Mavic 3",
@@ -58,7 +58,7 @@ export const products: Product[] = [
       "f/2.8 to f/11 Adjustable Aperture",
       "DJI RC Remote Included",
     ],
-    image: "/assets/images/products/drone.png",
+    image: "/assets/images/products/drone.webp",
   },
   {
     name: "Carbon Fiber Tripod",
@@ -73,7 +73,7 @@ export const products: Product[] = [
       'Min Height: 18.1"',
       'Folded Length: 16.1"',
     ],
-    image: "/assets/images/products/tripod.png",
+    image: "/assets/images/products/tripod.webp",
   },
   {
     name: "HERO 11 Black Mini",
@@ -88,6 +88,6 @@ export const products: Product[] = [
       "8x Slow-Motion Video",
       "5.3K60/2.7K240 Video",
     ],
-    image: "/assets/images/products/action-camera.png",
+    image: "/assets/images/products/action-camera.webp",
   },
 ];
