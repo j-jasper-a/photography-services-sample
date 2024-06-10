@@ -11,11 +11,13 @@ import {
 } from "lucide-react";
 import { footerLinks } from "@/config/footerLinks";
 import Link from "next/link";
+import { extraFooterLinks } from "@/config/extraFooterLinks";
+import { paymentMethods } from "@/config/paymentMethods";
 
 const FooterMobile = () => {
   return (
     <footer className="w-full bg-dark text-light md:hidden">
-      <div className="flex flex-col gap-4 p-6">
+      <div className="flex flex-col gap-6 p-6">
         <Logo className="mx-auto h-auto w-24" />
         <p className="text-xl font-medium">Come visit us!</p>
         <div className="flex justify-between">
@@ -95,6 +97,36 @@ const FooterMobile = () => {
             className="bg-light fill-dark p-1 text-dark"
           />
           <TwitterIcon size={28} className="bg-light fill-dark p-1 text-dark" />
+        </div>
+        <div className="mx-auto max-w-screen-2xl">
+          <div className="flex flex-col items-center gap-6">
+            <div className="flex justify-between gap-4">
+              {extraFooterLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-xs font-light opacity-40"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+            <div className="flex w-fit items-center gap-4">
+              {paymentMethods.map((item) => (
+                <Image
+                  key={item.name}
+                  className="h-auto w-9"
+                  src={item.image}
+                  alt={item.name}
+                  width={64}
+                  height={64}
+                />
+              ))}
+            </div>
+            <p className="text-xs font-light opacity-40">
+              © 2023 PIXEL. All Rights Reserved
+            </p>
+          </div>
         </div>
       </div>
     </footer>

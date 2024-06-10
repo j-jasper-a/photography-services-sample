@@ -11,6 +11,8 @@ import {
 } from "lucide-react";
 import { footerLinks } from "@/config/footerLinks";
 import Link from "next/link";
+import { extraFooterLinks } from "@/config/extraFooterLinks";
+import { paymentMethods } from "@/config/paymentMethods";
 
 const Footer = () => {
   return (
@@ -111,6 +113,36 @@ const Footer = () => {
           <div className="flex items-center gap-4">
             <EmailIcon className="text-brand" />
             <p className="opacity-50">name@camera.com</p>
+          </div>
+        </div>
+      </div>
+      <div className="mx-auto max-w-screen-2xl px-6 py-8">
+        <div className="grid grid-cols-3 items-center">
+          <p className="text-sm font-light opacity-40">
+            © 2023 PIXEL. <br /> All Rights Reserved
+          </p>
+          <div className="flex w-fit items-center gap-2 justify-self-center">
+            {paymentMethods.map((item) => (
+              <Image
+                key={item.name}
+                className="h-auto w-9"
+                src={item.image}
+                alt={item.name}
+                width={64}
+                height={64}
+              />
+            ))}
+          </div>
+          <div className="flex w-fit gap-4 justify-self-end">
+            {extraFooterLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm font-light opacity-40"
+              >
+                {link.name}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
