@@ -7,7 +7,7 @@ import Services from "@/components/services/Services";
 
 export default function Home() {
   return (
-    <main className="mt-20 md:mt-[157px]">
+    <main className="relative mt-20 md:mt-[157px]">
       <Hero />
       <SectionBreak />
       <Categories />
@@ -17,6 +17,7 @@ export default function Home() {
       <Products />
       <SectionBreak />
       <Savings />
+      <SectionBreak />
     </main>
   );
 }

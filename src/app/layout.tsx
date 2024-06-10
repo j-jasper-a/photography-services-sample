@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import FooterMobile from "@/components/footer/FooterMobile";
+import FloatingHome from "@/components/common/FloatingHome";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -22,11 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} bg-light text-dark`}>
+      <body className={`${poppins.className} relative bg-light text-dark`}>
         <Header />
         {children}
         <Footer />
         <FooterMobile />
+        <FloatingHome />
       </body>
     </html>
   );
