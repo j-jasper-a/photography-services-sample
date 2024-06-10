@@ -7,7 +7,7 @@ import {
 
 const Actions = () => {
   return (
-    <div className="flex gap-2 justify-self-end text-brand">
+    <div className="flex gap-2 justify-self-end text-brand md:gap-6">
       <Link
         href="/"
         className="hidden transition-all duration-300 hover:text-light md:block"

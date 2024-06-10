@@ -7,8 +7,8 @@ import Services from "@/components/services/Services";
 
 export default function Home() {
   return (
-    <main className="mt-20 md:mt-40">
-      {/* <Hero /> */}
+    <main className="mt-20 md:mt-[157px]">
+      <Hero />
       <SectionBreak />
       <Categories />
       <SectionBreak />
