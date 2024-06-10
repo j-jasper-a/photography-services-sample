@@ -7,14 +7,17 @@ import {
 
 const Actions = () => {
   return (
-    <div className="flex text-brand">
-      <Link href="/">
+    <div className="flex gap-2 justify-self-end text-brand">
+      <Link
+        href="/"
+        className="hidden transition-all duration-300 hover:text-light md:block"
+      >
         <UserIcon size={32} />
       </Link>
-      <Link href="/">
+      <Link href="/" className="transition-all duration-300 hover:text-light">
         <CartIcon size={32} />
       </Link>
-      <Link href="/">
+      <Link href="/" className="transition-all duration-300 hover:text-light">
         <SearchIcon size={32} />
       </Link>
     </div>
